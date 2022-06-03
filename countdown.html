@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown-Diables de Mollet</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--JS-->
+    <script src="./js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!--Background Video-->
+    <video class="video-background" loop muted autoplay>
+        <source src="./img/diables.mp4" />
+    </video>
+    <div class="video-overlay"></div>
+    <!--Container-->
+    <div class="container">
+    <!-- Input -->
+        <div class="input-container" id="input-container">
+            <h1>Countdown</h1>
+            <form class="form" id="countdownForm">
+                <label for="title">Título</label>
+                <input type="text" id="title" placeholder="¿A qué estás esperando?" />
+                <label for="date-picker">Selecciona una fecha</label>
+                <input type="date" id="date-picker" />
+                <button type="submit">Empieza la cuenta atrás</button>
+            </form>
+        </div>
+    <!-- Countdown -->
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title">Countdown Title Here</h1>
+            <ul>
+                <li><span></span> Días</li>
+                <li><span></span> Horas</li>
+                <li><span></span> Minutos</li>
+                <li><span></span> Segundos</li>
+            </ul>
+            <button id="countdown-button">Reset</button>
+        </div>
+    <!-- Countdown Completed -->
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">¡Countdown Completado!</h1>
+            <h1 id="complete-info"></h1>
+            <button id="complete-button">Nuevo Countdown</button>
+        </div>
+    </div>
+</body>
+
+</html>
